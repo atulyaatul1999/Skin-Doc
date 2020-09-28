@@ -5,7 +5,6 @@ from PIL import Image
 
 img_size = 224
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-root = './data/test/'
 
 transform = transforms.Compose([
     transforms.Resize((img_size, img_size)),
